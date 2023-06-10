@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    #show-sql: true
+  datasource:
+    url: jdbc:mysql://server.lazyalienserver.top:3306/bestskinserver
+    username: "LazyAlienServer"
+    password: "@Yang080305"
+    driver-class-name: com.mysql.cj.jdbc.Driver

@@ -1,0 +1,116 @@
+@import "figure.css";
+
+.login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+ul {
+    width: 610px;
+    height: 300px;
+    padding: 0px;
+}
+
+
+
+.login-ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 0px;
+}
+
+.login {
+    margin-top: 15px;
+    width: 300px;
+    height: 250px;
+}
+
+.login h1 {
+    margin-left: 3%;
+}
+
+.login p {
+    margin-left: 3%;
+    font-size: 14px;
+    color:gray;
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 300px;
+    height: 250px;
+    padding-bottom: 100px;
+}
+
+.icon img {
+    height: 230px;
+    width: 230px;
+}
+
+body {
+    background-color: rgb(33,37,41);
+    color: #f8f9fa;
+}
+
+input {
+    transition-property: all;
+    transition-duration: 200ms;
+    background: none;
+    width: 100%;
+    left: 10%;
+    right: 10%;
+    height: 40px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #b1c1c3;
+    color: #f8f9fa;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 8px;
+}
+
+input:hover {
+    box-shadow: 0px 0px 8px -1px #b1c1c3;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(102,177,255);
+}
+
+input[type=submit] {
+    font-size: 14px;
+    height: 30px;
+    background-color: #2168d3;
+    color: white;
+    text-align: center;
+    padding: 0px;
+}
+
+input[type=submit]:hover {
+    background-color: #6096E6;
+    box-shadow: none;
+}
+
+@media (max-width: 700px) {
+    .icon {
+        display: none;
+    }
+    .login-box {
+        width: 100%;
+    }
+    .login-ul {
+        width: 300px;
+    }
+
+    .login-ul li {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Alien Server</title>
+    <link rel="shortcut icon" href="../source/img/icon-colored.png">
+    <link href="../css/home.css" rel="stylesheet">
+</head>
+<body>
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://cdn.staticfile.org/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" data-bs-theme="dark">
+        
+        <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <img decoding="async" src="../source/img/icon.png" alt="Logo" style="margin-left:50px; width:35px;">
+        <a class="navbar-brand ms-2" href="#">Lazy Alien Server</a>
+        <div class="collapse navbar-collapse justify-content-end me-4" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item ms-2">
+                <a class="nav-link" href="#">首页</a>
+            </li>
+            <li class="nav-item ms-2">
+                <a class="nav-link" href="#">加入我们</a>
+            </li>
+            <li class="nav-item ms-2">
+                <a class="nav-link" href="#">画廊</a>
+            </li>
+            <li class="nav-item ms-2">
+                <a class="nav-link" href="#">文书</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login">登录</a>
+            </li>
+          </ul>
+        </div>
+       
+    </nav>
+    <div>
+        <figure class="las-figure">
+            <img src="../source/img/background.jpg" class="las-figure-img">
+            <figcaption>
+                <h1 style="font-weight: bolder; -webkit-text-stroke: 0.5px white;"><span style="color:#AFBADC">L</span>azy <span style="color:#6096E6">A</span>lien <span style="color:#2169D3">S</span>erver</h1>
+                <p class="subtitle"><i>「LAS生电服务器 - CatCoinZHSM & tanh_Heng」</i></p>
+                <a href="#" role="button">加入我们</a><a href="#more" role="button">了解详情</a>
+                <p class="button-subtitle">与LAS的成员们, 携手并进</p>
+            </figcaption>
+        </figure>
+    </div>
+    <div id="more" class="about-us">
+        <p>&nbsp;</p>
+        <ul>
+            <li pos="left">
+                <img src="../source/img/icon.png">
+            </li>
+            <li pos="right">
+                <div>
+                    <h2 style="font-weight: bolder;">关 于 我 们</h2>
+                    <p>Lazy Alien Server 是一个免费的、公益的 Minecraft JE 生电服务器，</p>
+                    <p>成立于2022.8.29，</p>
+                    <p>由「服主」CatCoinZHSM 和「物理服主」tanh丶桁 共同建立。</p>
+                </div>
+            </li>
+        </ul><p>&nbsp;</p>
+    </div>
+
+    <div class="title">
+        <h2>画 廊</h2>
+        <p type="subtitle">在LAS, 做一场现实的梦</p>
+        <p type="line">————</p>
+    </div>
+
+    <!-- 轮播 -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- 指示符 -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- 轮播图片 -->
+        <div class="carousel-inner" >
+            <div class="carousel-item active" style="left: 10%;">
+                <img decoding="async" src="https://lazyalienserver.top/images/album/desert_area.jpg" class="d-block">
+            </div>
+            <div class="carousel-item" style="left: 10%;">
+                <img decoding="async" src="https://lazyalienserver.top/images/album/spawnarea_area.jpg" class="d-block">
+            </div>
+            <div class="carousel-item" style="left: 10%;">
+                <img decoding="async" src="https://lazyalienserver.top/images/album/iceroad.jpg" class="d-block">
+            </div>
+        </div>
+
+        <!-- 左右切换按钮 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="title">
+        <h2>支 持</h2>
+        <p type="subtitle">强劲的服务与支持为服务器保驾护航</p>
+        <p type="line">————</p>
+        <div class="support">
+            <ul>
+                <li>
+                    <img src="../source/img/cpu.png">
+                    <h4>13900k</h4>
+                    <p>强大性能！主频可达5.8-6.0GHz</p>
+                </li>
+                <li>
+                    <img src="../source/img/ram.png">
+                    <h4>DDR5内存</h4>
+                    <p>16Gx4 幻锋戟 DDR5-6000MHz</p>
+                </li>
+                <li>
+                    <img src="../source/img/tools.png">
+                    <h4>LAS特色插件</h4>
+                    <p>配合插件及其强大拓展性实现多种功能</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        ...
+    </div>
+</body>
+</html>
