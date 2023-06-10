@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: my-artifact
-        path: backend/target/?.jar
+        path: backend/target/app
