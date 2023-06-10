@@ -26,10 +26,8 @@ public class CustomBanner implements Banner {
     private static final String SPRING_BOOT = " :: BestSkin for Spring Boot :: ";
     private static final int STRAP_LINE_SIZE = 42;
 
-
     @Override
-    public void printBanner(Environment environment, Class<?> sourceClass,
-                            PrintStream printStream) {
+    public void printBanner(Environment environment, Class<?> sourceClass, PrintStream printStream) {
         for (String line : BANNER) {
             printStream.println(line);
         }
@@ -38,7 +36,7 @@ public class CustomBanner implements Banner {
         Properties properties = new Properties();
         try {
             properties.load(getClass().getClassLoader().getResourceAsStream("git.properties"));
-            version = (version != null & properties.get("git.build.version") != null & properties.get("git.commit.id.abbrev") != null) ? " (v"+properties.get("git.build.version")+"-"+properties.get("git.commit.id.abbrev")+" for v"+version+")" : "";
+            version = (properties.get("git.build.version") != null & properties.get("git.commit.id.abbrev") != null) ? " (v"+properties.get("git.build.version")+"-"+properties.get("git.commit.id.abbrev")+" for v"+version+")" : "";
             StringBuilder padding = new StringBuilder();
             while (padding.length() < STRAP_LINE_SIZE
                     - (version.length() + SPRING_BOOT.length())) {
