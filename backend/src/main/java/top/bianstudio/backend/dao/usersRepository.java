@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import top.bianstudio.backend.pojo.UserEntity;
 
 public interface usersRepository extends CrudRepository<UserEntity, Integer> {
-    public UserEntity findByNickname(String Nickname);
-    public UserEntity findByEmail(String Email);
+    UserEntity findByNickname(String Nickname);
+    UserEntity findByEmail(String Email);
 
 }

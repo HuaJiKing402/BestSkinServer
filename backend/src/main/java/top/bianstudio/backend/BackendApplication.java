@@ -1,10 +1,10 @@
 package top.bianstudio.backend;
 
 import org.java_websocket.client.WebSocketClient;
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -13,8 +13,12 @@ public class BackendApplication {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(BackendApplication.class, args);
+        SpringApplication app = new SpringApplication(BackendApplication.class);
+        app.setBannerMode(Banner.Mode.CONSOLE);
+        app.setBanner(new CustomBanner());
+        app.run(args);
     }
+
     @Bean
     public WebSocketClient webSocketClient() {
         try {
