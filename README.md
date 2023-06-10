@@ -1,4 +1,4 @@
-# BeskSkinServer
+# BestSkinServer
 ## 功能介绍
 - 皮肤站
 - 第三方验证
